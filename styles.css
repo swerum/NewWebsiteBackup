@@ -1,0 +1,121 @@
+/* Variables */
+:root {
+    --Snap-yellow : #ffff0d;
+    --Studio-purple: #cb78ff;
+    --Steam-blue: #88b1ff;
+    --Blender-orange: #ff8800;
+    --Figma-pink: #ff92ae;
+    --text-color: #FFFFFF;
+    --hover-shadow-size: 20px;
+}
+
+/* Page */
+
+@font-face {
+    font-family: Playfair;
+    src: url(Roboto/Roboto-Medium.ttf);
+}
+
+header {
+    background-color: #000000;
+    /* background-image: none; */
+    border: #3b3b3b;
+    display: inline-flex;
+    flex-direction: row;
+    align-items:start;
+}
+header a img {
+    height: 50px;
+    width: 100%;
+    object-fit: contain;
+    float: left;
+}
+div { padding: 10px 30px 10px 30px;}
+
+.Page-Body {
+    background-image: url("Images/hex.png");
+    background-size: 100px;
+    background-repeat: repeat;
+}
+body {
+    background-color: #171717;
+    color: var(--text-color);
+    font-family: Playfair;
+    margin : 0;
+} 
+section, img {
+    padding: 20px;
+}
+h1 , figure {
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+}
+
+/* FIGURES: Link Images */
+.experience-section a figure {
+    width: 200px;
+}
+figure img {
+    width: 100%;
+}
+figcaption {
+    color: var(--text-color);
+}
+img {
+    width: 200px;
+    max-width: 400px;
+}
+.skill-section figure {
+    width: 80px;
+}
+/* WRAPPED ROW */
+.wrapped-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+/* EXTRA */
+hr.seperator {
+    border-top: 1px dashed #bbb;
+    border-bottom: none;
+}
+#light {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    transform: translate(var(--light-position-x, 0px), var(--light-position-y, 0px));
+    background-color: rgb(231, 221, 122);
+    filter: blur(10px);
+  }
+
+
+
+/* FIGURE DROPSHADOWS */
+a figure img {
+    filter: drop-shadow(0px 0px 5px #bdbdbd);
+    margin-top: 0;
+}
+a figure img:hover {
+    margin-top: -10;
+    filter: drop-shadow(0px 0px var(--hover-shadow-size) #bdbdbd);
+}
+a figure.Snapchat img:hover, img.Snapchat {
+    filter: drop-shadow(0px 0px var(--hover-shadow-size) var(--Snap-yellow));
+}
+a figure.StudioSeufz img:hover, img.StudioSeufz {
+    filter: drop-shadow(0px 0px var(--hover-shadow-size) var(--Studio-purple));
+}
+a figure.Steam img:hover, img.Steam {
+    filter: drop-shadow(0px 0px var(--hover-shadow-size) var(--Steam-blue));
+}
+a figure.Blender img:hover {
+    filter: drop-shadow(0px 0px var(--hover-shadow-size) var(--Blender-orange));
+}
+a figure.Figma img:hover {
+    filter: drop-shadow(0px 0px var(--hover-shadow-size) var(--Figma-pink));
+}
