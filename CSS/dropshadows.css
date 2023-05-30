@@ -1,0 +1,37 @@
+
+:root {
+    --Snap-yellow : #ffff0d;
+    --Studio-purple: #cb78ff;
+    --Steam-blue: #88b1ff;
+    --Blender-orange: #ff8800;
+    --Figma-pink: #ff92ae;
+    --hover-shadow-size: 15px;
+}
+
+
+/* FIGURE DROPSHADOWS */
+a figure img {
+    filter: drop-shadow(0px 0px 5px #bdbdbd);
+    margin-top: 0;
+}
+a figure img:hover {
+    /* cursor:pointer; */
+    /* margin-top: -10px; */
+    padding-top: 10px;
+    filter: drop-shadow(0px 0px var(--hover-shadow-size) #bdbdbd);
+}
+a figure.Snapchat img:hover, img.Snapchat {
+    filter: drop-shadow(0px 0px var(--hover-shadow-size) var(--Snap-yellow));
+}
+a figure.StudioSeufz img:hover, img.StudioSeufz {
+    filter: drop-shadow(0px 0px var(--hover-shadow-size) var(--Studio-purple));
+}
+a figure.Steam img:hover, img.Steam {
+    filter: drop-shadow(0px 0px var(--hover-shadow-size) var(--Steam-blue));
+}
+a figure.Blender img:hover {
+    filter: drop-shadow(0px 0px var(--hover-shadow-size) var(--Blender-orange));
+}
+a figure.Figma img:hover {
+    filter: drop-shadow(0px 0px var(--hover-shadow-size) var(--Figma-pink));
+}
