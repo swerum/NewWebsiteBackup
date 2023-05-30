@@ -45,33 +45,49 @@ body {
 section, img {
     padding: 20px;
 }
-h1 , figure {
-    text-align: center;
-    align-content: center;
-    justify-content: center;
+a figure img {
+    position: relative;
 }
-.Project-Heading {
-    text-align: center;
+a figure img:hover {
+    top: -10px;
 }
-
-
-/* FIGURES: Link Images */
-
-.skill-section figure {
-    width: 80px;
-}
-figure img {
-    width: 100%;
-}
-figcaption {
-    color: var(--text-color);
+h1 , .Project-Heading{
     text-align: center;
 }
 img {
     width: 200px;
     max-width: 400px;
-    outline: rgb(159, 159, 159);
 }
+.image-text-row {
+    display: flex;
+}
+.image-text-row div {
+    width: 400px;
+    flex:auto;
+}
+.image-text-row img {
+    width: 200px;
+}
+
+/* FIGURES: Link Images */
+
+.skill-section figure {
+    text-align: center;
+    width: 80px;
+}
+figure img {
+    width: 100%; 
+    padding: 0px;
+    margin: 0px;
+}
+figcaption {
+    color: var(--text-color);
+    /* width: 100%; */
+    margin-top: 20px;
+    /* padding: 0px; */
+    text-align: center;
+}
+
 a {
     color: var(--text-color);
 }
@@ -80,9 +96,9 @@ a {
 .wrapped-row {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
+    align-items:center;
 }
 
 /* EXTRA */
