@@ -9,24 +9,8 @@
 @font-face {
     font-family: Playfair;
     src: url(../Roboto/Roboto-Medium.ttf);
+    
 }
-/* ----------------------- HEADER ----------------------- */
-header {
-    background-color: #000000;
-    margin: 20px;
-    text-align: left;
-    display: inline-flex;
-    flex-direction: row;
-    width: 100%;
-    height: 100px;
-}
-header a img {
-    height: 50px;
-    width: 100%;
-    object-fit: contain;
-    float: left;
-}
-div { padding: 10px 30px 10px 30px;}
 
 .Page-Body {
     background-image: url("../Images/hex.png");
@@ -35,6 +19,7 @@ div { padding: 10px 30px 10px 30px;}
     padding: 0;
     object-fit: contain;
     height: 100%;
+    text-align: center;
 }
 body {
     background-color: #171717;
@@ -42,6 +27,32 @@ body {
     font-family: Playfair;
     margin : 0;
 } 
+
+/* ----------------------- HEADER ----------------------- */
+header {
+    background-color: #131313;
+    margin: 20px;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content:first baseline;
+    align-items: center;
+    width: 95%;
+    height: 90px;
+    border-radius: 10px;
+    font-size: small;
+}
+header div { 
+    margin: 10px;
+    font-size: 14px;
+}
+header a img {
+    height: 50px;
+    margin: 10px;
+    width: 100%;
+    object-fit: contain;
+}
+div { padding: 10px 30px 10px 30px;}
+
 section, img {
     padding: 20px;
 }
@@ -60,17 +71,35 @@ img {
 }
 .image-text-row {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
-.image-text-row div {
+.image-text-row p {
     width: 400px;
     flex:auto;
+    text-align: justify;
 }
 .image-text-row img {
-    width: 200px;
+    width: 300px;
+    height: 300px;
+    aspect-ratio:initial;
+}
+
+p {
+    text-align: justify;
+    padding: 20px;
+}
+
+.wrapped-row p {
+    width: 400px;
+    flex: auto;
 }
 
 /* FIGURES: Link Images */
-
+.skill-section {
+    max-width: 800px;
+}
 .skill-section figure {
     text-align: center;
     width: 80px;
