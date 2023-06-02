@@ -1,11 +1,40 @@
 #light {
-    background-color: rgb(204, 121, 255);
+    background-color: #d900ff;
+}
+:root {
+    --defaultDropshadow: #52005e;
 }
 
-img {
-    width: 800px;
+.studioMagenta img {
+    width : 400px;
 }
+
 
 .Project-Heading {
     text-align: center;
+}
+
+@media screen and (max-width: 800px) {
+    .Page-Body p {
+        margin-left: 30px;
+        margin-right: 20px;
+    }
+}
+@media screen and (min-width: 801px) {
+    .Page-Body p {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+}
+
+
+@media screen and (max-width: 1100px) {
+    .wrapped-row img {
+        width: 95%;
+    }
+}
+@media screen and (min-width: 1101px) {
+    .wrapped-row img {
+        width:45%;
+    }
 }

@@ -14,8 +14,9 @@
 
     <div class="Page-Body">
         <header>
-            <a href="../index.html"><img src="../Images/Header/home.png" alt="Home Button"></a>
-            <a href="https://www.linkedin.com/in/sarahwerum"><img src="../Images/Header/LinkedIn.png" alt="Linked In Sarah Werum"></a>
+            <a href="../index.html" class="grey"><img src="../Images/Header/home.png" alt="Home Button"></a>
+            <a href="https://www.linkedin.com/in/sarahwerum" class="grey"><img src="../Images/Header/LinkedIn.png" alt="Linked In Sarah Werum"></a>
+            <div>Contact: sarahwerum.dev <br> Original website by Sarah Werum</div>
         </header>
         <section>
             <h1>Who I am</h1>
@@ -31,8 +32,9 @@
                     video game studio <a href="https://studioseufz.com/seufzWP/">Studio Seufz</a>, which then hired me as a part time game programmer
                     while I continued my degree. <br><br>
                     To my own surprise, my background in design and programming lent itself to the creation of Augmented Reality experiences.
-                    I was hired as an intern at Snap Inc. where I worked on Connected Lenses as well as some smaller projects. After the summer, 
-                    I was offered a fulltime position after my granduation in summer of 2022. <br>
+                    I was hired as an intern at Snap Inc. where I worked on Connected Lenses as well as some explorations into new lens archetypes. 
+                    After the summer, I was offered a fulltime position after my granduation in summer of 2022. I have now been working there for a year and 
+                    am grateful for the experience navigating a big company with even bigger goals.
                 </p>
             </div>
         </section>
@@ -43,20 +45,21 @@
             <div class="wrapped-row experience-section">
                 <a href="HTML/Snapchat.html"> 
                     <figure class="yellowDropshadow">
-                        <img src="Images/Logos/Snapchat.png" alt="Snapchat Logo">
+                        <img src="Images/Snapchat/Snapchat.png" alt="Snapchat Logo">
                         <figcaption>Snapchat</figcaption>
                     </figure>
                 </a>
                 <a href="HTML/StudioSeufz.html">
-                    <figure class="purpleDropshadow">
-                        <img src="Images/Logos/StudioSeufz.png" alt="Studio Seufz Logo">
+                    <figure class="studioMagenta">
+                        <img src="Images/StudioSeufz/StudioSeufz.png" alt="Studio Seufz Logo">
                         <figcaption>Studio Seufz</figcaption>
                     </figure>
                 </a>
                 <a href="HTML/EscapingHell.html">
-                    <figure class="blueDropshadow">
-                        <img src="Images/Logos/steam.png" alt="Escaping Hell Logo">
-                        <figcaption>Steam</figcaption>
+                    <figure class="blueDropshadow steam-icon-parent">
+                        <img src="Images/EscapingHell/app_icon.png" alt="Escaping Hell Logo">
+                        <div id="steam-icon" class="blueDropshadow"><img src="Images/EscapingHell/steam.png" alt="Steam Logo"></div>
+                        <figcaption>Escaping Hell</figcaption>
                     </figure>
                 </a>
             </div>
@@ -67,18 +70,24 @@
             <h1>What I've learned</h1> 
             <div class="wrapped-row">
                 <div class="wrapped-row skill-section">
-                    <figure>
-                        <img src="../Images/Skill Logos/Languages/JS.png" alt="Javascript">
-                        <figcaption>JavaScript</figcaption>
-                    </figure>
-                    <figure>
-                        <img src="../Images/Skill Logos/Languages/csharp_banner.png" alt="C#">
-                        <figcaption>C#</figcaption>
-                    </figure>
-                    <figure>
-                        <img src="../Images/Skill Logos/Languages/java.svg" alt="Java">
-                        <figcaption>Java</figcaption>
-                    </figure>
+                    <a href="https://www.javascript.com/">
+                        <figure class="jsYellow">
+                            <img src="../Images/Skill Logos/Languages/JS.png" alt="Javascript">
+                            <figcaption>JavaScript</figcaption>
+                        </figure>
+                    </a>
+                    <a href="https://learn.microsoft.com/en-us/dotnet/csharp/">
+                        <figure class="lightPurple">
+                            <img src="../Images/Skill Logos/Languages/csharp_banner.png" alt="C#">
+                            <figcaption>C#</figcaption>
+                        </figure>
+                    </a>
+                    <a href="https://www.java.com/en/">
+                        <figure class="blueDropshadow">
+                            <img src="../Images/Skill Logos/Languages/java.svg" alt="Java">
+                            <figcaption>Java</figcaption>
+                        </figure>
+                    </a>
                     <a href="https://ar.snap.com/lens-studio">
                         <figure class="smallYellow">
                             <img src="../Images/Skill Logos/Softwares/Lens Studio.png" alt="Lens Studio">
@@ -98,7 +107,7 @@
                         </figure>
                     </a>
                     <a href="https://unity.com/">
-                        <figure class="Unity">
+                        <figure class="grey">
                             <img src="../Images/Skill Logos/Softwares/UnityLogo.png" alt="Unity Logo">
                             <figcaption>Unity</figcaption>
                         </figure>
@@ -121,10 +130,15 @@
                             <figcaption>Game Maker</figcaption>
                         </figure>
                     </a>
+                    <a href="https://partner.steamgames.com/doc/sdk">
+                        <figure class="blueDropshadow">
+                            <img src="../Images/EscapingHell/steam.png" alt="Steam Logo Logo">
+                            <figcaption>Steam SDK</figcaption>
+                        </figure>
+                    </a>
                 </div>
             </div>   
         </section>
-        <!-- <footer>Learn More</footer> -->
     </div>
 </body>
 <script src="JS/MouseLight.js"></script>
